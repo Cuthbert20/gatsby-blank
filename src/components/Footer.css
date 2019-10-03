@@ -1,0 +1,66 @@
+body {
+  --primary-color: rgba(223, 15, 36, 0.829);
+  --secondary-color: rgba(141, 163, 184, 0.534);
+  --black-color: rgb(34, 33, 33);
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-around;
+  /* border: 1px red solid; */
+  width: 100%;
+  background-color: var(--secondary-color);
+}
+
+.footer-title {
+  text-transform: uppercase;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  line-height: 2rem;
+  letter-spacing: 2px;
+}
+.techs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 50%;
+  color: var(--black-color);
+}
+
+.contact {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 50%;
+  color: var(--black-color);
+}
+
+.footer-title {
+  margin-left: 5px;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.contact-list {
+  display: flex;
+  flex-direction: row;
+}
+
+.profile-img {
+  max-width: 150px;
+  object-fit: contain;
+  border-radius: 5px;
+  border: 1px solid rgba(141, 163, 184, 0.897);
+}

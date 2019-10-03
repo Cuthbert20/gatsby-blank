@@ -12,7 +12,7 @@ body {
   top: 0;
   left: 0;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   width: 99vw;
   padding-left: 25px;
@@ -30,6 +30,8 @@ body {
   animation: moveInLeft;
   animation-duration: 1s;
   animation-timing-function: ease-out;
+  animation-delay: 0.3s;
+  animation-fill-mode: backwards;
   color: var(--black-color);
 }
 
@@ -42,6 +44,8 @@ body {
   letter-spacing: 0.2rem;
   animation: moveInLeft 1.5s ease-out;
   color: var(--black-color);
+  animation-delay: 0.3s;
+  animation-fill-mode: backwards;
 }
 
 .icon-container {
@@ -55,6 +59,7 @@ body {
 
 .icon {
   color: var(--black-color);
+  background: none;
 }
 
 .icon-1 {
@@ -73,6 +78,11 @@ body {
 
 .icon:hover {
   color: var(--primary-color);
+  transform: translateY(-3px);
+}
+
+.icon:active {
+  transform: translateY(-1px);
 }
 
 @keyframes moveInLeft {

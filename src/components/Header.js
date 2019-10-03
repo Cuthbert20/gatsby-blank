@@ -10,9 +10,13 @@ export default () => (
       </h1>
       <h3 className="my-title">Full Stack Web Developer</h3>
     </div>
-    <div>
-      <FaGithub className="icon" size={40} />
-      <FaLinkedin className="icon" size={40} />
+    <div className="icon-container">
+      <a href="https://github.com/Cuthbert20">
+        <FaGithub className="icon" size={40} />
+      </a>
+      <a href="https://www.linkedin.com/in/spencer-knowlton-8607ba162/">
+        <FaLinkedin className="icon" size={40} />
+      </a>
     </div>
   </header>
 )

@@ -1,0 +1,26 @@
+.header {
+  background-color: rgba(141, 163, 184, 0.534);
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 99vw;
+  padding-left: 25px;
+  line-height: 1rem;
+}
+
+.name {
+  font-weight: 500;
+  letter-spacing: 0.4rem;
+}
+
+.last {
+  color: rgba(223, 15, 36, 0.829);
+}
+
+.my-title {
+  font-weight: 400;
+  letter-spacing: 0.2rem;
+}

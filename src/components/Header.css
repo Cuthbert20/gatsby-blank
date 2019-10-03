@@ -1,5 +1,13 @@
+body {
+  --primary-color: rgba(223, 15, 36, 0.829);
+  --secondary-color: rgba(141, 163, 184, 0.534);
+  --black-color: #333;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
 .header {
-  background-color: rgba(141, 163, 184, 0.534);
+  background-color: var(--secondary-color);
   position: fixed;
   top: 0;
   left: 0;
@@ -11,22 +19,33 @@
   line-height: 1rem;
 }
 
+.name-container {
+  text-transform: uppercase;
+  backface-visibility: hidden;
+}
+
 .name {
   font-weight: 600;
   letter-spacing: 0.4rem;
+  animation: moveInLeft;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+  color: var(--black-color);
 }
 
 .last {
-  color: rgba(223, 15, 36, 0.829);
+  color: var(--primary-color);
 }
 
 .my-title {
   font-weight: 500;
   letter-spacing: 0.2rem;
+  animation: moveInLeft 1.5s ease-out;
+  color: var(--black-color);
 }
 
 .icon-container {
-  border: 1px solid red;
+  /* border: 1px solid red; */
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -35,4 +54,55 @@
 }
 
 .icon {
+  color: var(--black-color);
+}
+
+.icon-1 {
+  margin-right: 6px;
+  animation: fallFromTop;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+}
+
+.icon-2 {
+  margin-left: 6px;
+  animation: fallFromTop;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-out;
+}
+
+.icon:hover {
+  color: var(--primary-color);
+}
+
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+
+  80% {
+    transform: translateX(10px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fallFromTop {
+  0% {
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+
+  80% {
+    transform: translateY(10px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }

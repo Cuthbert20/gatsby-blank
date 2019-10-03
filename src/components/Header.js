@@ -4,7 +4,7 @@ import { FaGithub, FaLinkedin } from "react-icons/fa"
 
 export default () => (
   <header className="header">
-    <div>
+    <div className="name-container">
       <h1 className="name">
         Spencer <span className="last">Knowlton</span>
       </h1>
@@ -12,10 +12,10 @@ export default () => (
     </div>
     <div className="icon-container">
       <a href="https://github.com/Cuthbert20">
-        <FaGithub className="icon" size={40} />
+        <FaGithub className="icon icon-1" size={50} />
       </a>
       <a href="https://www.linkedin.com/in/spencer-knowlton-8607ba162/">
-        <FaLinkedin className="icon" size={40} />
+        <FaLinkedin className="icon icon-2" size={50} />
       </a>
     </div>
   </header>

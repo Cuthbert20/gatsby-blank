@@ -14,7 +14,13 @@ body {
   justify-content: space-around;
   /* border: 1px red solid; */
   width: 100%;
-  background-color: var(--secondary-color);
+  /* background-color: var(--secondary-color);
+   */
+  background-image: linear-gradient(
+      to right bottom rgba(141, 163, 184, 0.904),
+      rgba(135, 143, 199, 0.787)
+    ),
+    url("https://res.cloudinary.com/cuthbert20/image/upload/v1570227077/safar-safarov-MSN8TFhJ0is-unsplash_c8nnei.jpg");
 }
 
 .footer-title {
@@ -53,9 +59,22 @@ ul {
   list-style-type: none;
 }
 
+.list {
+  font-weight: 700;
+  color: var(--black-color);
+}
+
 .contact-list {
   display: flex;
   flex-direction: row;
+  font-weight: 700;
+  color: var(--black-color);
+}
+
+li > a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
 }
 
 .profile-img {

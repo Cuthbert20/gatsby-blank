@@ -44,6 +44,7 @@ export default () => (
               knowltonspencer@gmail.com
             </a>
           </li>
+          <li>Phone: 435-610-0129</li>
         </ul>
       </div>
     </div>

@@ -7,7 +7,11 @@ body {
 }
 
 .header {
-  background-color: var(--secondary-color);
+  /* background-color: var(--secondary-color); */
+  background: linear-gradient(
+    to right bottom rgba(141, 163, 184, 0.589),
+    rgba(135, 143, 199, 0.787)
+  );
   position: fixed;
   top: 0;
   left: 0;
@@ -15,7 +19,7 @@ body {
   justify-content: space-around;
   align-items: center;
   width: 99vw;
-  padding-left: 25px;
+  /* padding-left: 25px; */
   line-height: 1rem;
 }
 
